@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author   = { "Oursky Ltd." => "hello@oursky.com" }
   s.source   = { :git => 'https://github.com/SkygearIO/MagicKit.git',
                  :tag => s.version.to_s }
-
+  s.header_dir   = "MagicKit"
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
   s.resource = 'magic.mgc'  
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.ios.frameworks   = 'Foundation', 'MobileCoreServices'
   s.osx.frameworks   = 'Foundation', 'CoreServices'
-
+  
   s.library = 'z'
 
   s.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => '$(inherited) HAVE_CONFIG_H=1' }
