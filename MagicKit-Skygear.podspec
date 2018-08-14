@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name     = 'MagicKit-Skygear'
   s.module_name = 'MagicKit'
+  s.header_dir = 'MagicKit'
   s.version  = '0.0.6'
   s.license  = 'MIT'
   s.summary  = 'Fork of MagicKit with fixes for errors and warnings present in later versions of Clang and updated libmagic sources'
